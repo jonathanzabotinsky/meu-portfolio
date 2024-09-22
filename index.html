@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Meu Portfólio</title>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-gradient text-white text-center py-5">
+        <h1>Meu Portfólio</h1>
+        <p>Jonathan Zabotinsky</p>
+    </header>
+
+    <!-- Seção Sobre -->
+    <section class="container mt-5">
+        <h2>Sobre Mim</h2>
+        <button class="btn btn-gradient" id="toggleButton">Mostrar Mais</button>
+        <div id="sobreText" class="mt-3" style="display: none;">
+            <p>Olá! Eu sou um desenvolvedor iniciando minha carreira na área de tecnologia. Estou aprendendo e me aprimorando em várias linguagens e frameworks, buscando oportunidades para aplicar meus conhecimentos e contribuir em projetos inovadores.</p>
+            <p>Estou em busca de enfrentar novos desafios e crescer profissionalmente na área de desenvolvimento de software.</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="text-center mt-5 p-4 bg-gradient text-white">
+        <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript para mostrar e esconder o texto
+        document.getElementById('toggleButton').onclick = function() {
+            document.getElementById('toggleButton').onclick = function() {
+            var text = document.getElementById('sobreText');
+            if (text.style.display === 'none') {
+                text.style.display = 'block';
+                this.innerHTML = 'Mostrar Menos';
+                this.classList.remove('btn-outline-secondary');
+                this.classList.add('btn-success'); // Muda para verde
+            } else {
+                text.style.display = 'none';
+                this.innerHTML = 'Bio';
+                this.classList.remove('btn-success');
+                this.classList.add('btn-outline-secondary'); // Retorna à cor original
+            }
+        };
+        // Set initial button text and color
+        document.getElementById('toggleButton').innerHTML = 'Bio';
+        document.getElementById('toggleButton').classList.add('btn-outline-secondary');
+        };
+    </script>
+</body>
+</html>

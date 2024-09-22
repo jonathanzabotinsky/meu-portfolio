@@ -1,0 +1,40 @@
+body {
+    background-color: #f5f5f7; /* Cor de fundo suave */
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background: linear-gradient(90deg, #1e3c72, #2a69ac); /* Gradiente azul */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
+
+footer {
+    background: linear-gradient(90deg, #1e3c72, #2a69ac); /* Gradiente azul */
+    color: white;
+    border-top: 1px solid #e0e0e0;
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #1e3c72, #2a69ac); /* Gradiente para o botão */
+    color: white;
+    border: none;
+}
+
+.btn-success {
+    background-color: #28a745; /* Verde da Apple */
+    color: white;
+}
+
+.btn-outline-secondary {
+    color: #333;
+    border-color: #333;
+}
